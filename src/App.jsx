@@ -1,18 +1,17 @@
 import React from 'react'
 import {Routes,Route,Navigate,BrowserRouter } from 'react-router-dom'
-import Home from './pages/Dashboard/Home'
-import Expense from "./pages/Dashboard/Expense"
-import Income from "./pages/Dashboard/Income"
-import Login from "./pages/Auth/Login"
-import Signup from "./pages/Auth/Signup"
-import UserProvider from './context/Usercontenx'
+import Home from './pages/Dashboard/Home.jsx'
+import Expense from "./pages/Dashboard/Expense.jsx"
+import Income from "./pages/Dashboard/Income.jsx"
+import Login from "./pages/Auth/Login.jsx"
+import Signup from "./pages/Auth/Signup.jsx"
+import UserProvider from './context/Usercontext'
 
 function App() {
   console.log(window.location.pathname);
 
   return (
     <UserProvider>
-      <div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Root />} />
@@ -23,8 +22,6 @@ function App() {
           <Route path="/income" element={<Income />} />
         </Routes>
       </BrowserRouter>
-
-    </div>
     </UserProvider>
     
   )
