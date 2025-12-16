@@ -1,11 +1,12 @@
 import { LuLayoutDashboard, LuWallet, LuTrendingUp, LuLogOut } from "react-icons/lu";
 import { Link, useLocation } from "react-router-dom";
-
-
+import { UserContext } from "../../context/UserContext";
+import { useContext } from "react";
 
 const SideMenu = ({ username }) => {
   const { pathname } = useLocation();
-  // const {username} = Usercontext
+
+   const { user, clearUser } = useContext(UserContext);
 
   const menuItems = [
     { name: "Dashboard", path: "/dashboard", icon: <LuLayoutDashboard size={20} /> },
@@ -22,7 +23,7 @@ const SideMenu = ({ username }) => {
     <div className="w-60 h-screen bg-white shadow-lg flex flex-col p-4 border-r">
       {/* USER SECTION */}
       <div className="mb-8">
-        <h2 className="text-xl font-bold text-primary">Hi, {username} 👋</h2>
+        <h2 className="text-xl font-bold text-primary">Hi! {username} 👋</h2>
       </div>
 
       {/* MENU ITEMS */}

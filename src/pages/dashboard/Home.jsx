@@ -2,7 +2,7 @@ import React, { useContext, useEffect ,useState} from 'react'
 import SideMenu from './Sidemenu'
 import axiosInstance from '../../utils/axiosInstance'
 import { API_PATHS } from '../../utils/apiPaths'
-import { Usercontext } from '../../context/Usercontext'
+import { UserContext } from '../../context/UserContext'
 import InfoCard from '../../components/Cards/InfoCard'
 import { LuTrendingUp, LuWallet, LuPiggyBank } from "react-icons/lu";
 import { addThousandSeperator } from '../../utils/helper'
@@ -12,7 +12,7 @@ import RecentTransactions from './RecentTransactions'
 
 function Home() {
   const [userData,setUserData] = useState([])
-  const {user} = useContext(Usercontext)
+  const {user} = useContext(UserContext)
   console.log("user",user)
   const [loading,setLoading] = useState(false)
 

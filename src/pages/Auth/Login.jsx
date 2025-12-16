@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axiosInstance from "../../utils/axiosInstance";
 import { API_PATHS } from "../../utils/apiPaths";
-import { Usercontext } from "../../context/Usercontext";
+import { UserContext } from "../../context/UserContext";
 
 
 const Login = () => {
@@ -11,7 +11,7 @@ const Login = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate()
 
-  const {updateUser} = useContext(Usercontext)
+  const {updateUser} = useContext(UserContext)
 
   const handleSubmit = async (e) => {
     e.preventDefault();

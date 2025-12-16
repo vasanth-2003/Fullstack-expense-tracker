@@ -1,15 +1,15 @@
-import React from 'react'
-import {Routes,Route,Navigate,BrowserRouter } from 'react-router-dom'
-import Home from './pages/Dashboard/Home.jsx'
-import Expense from "./pages/Dashboard/Expense.jsx"
-import Income from "./pages/Dashboard/Income.jsx"
-import Login from "./pages/Auth/Login.jsx"
-import Signup from "./pages/Auth/Signup.jsx"
-import UserProvider from './context/Usercontext'
+import React from "react";
+import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
+
+import Home from "./pages/Dashboard/Home.jsx";
+import Expense from "./pages/Dashboard/Expense.jsx";
+import Income from "./pages/Dashboard/Income.jsx";
+import Login from "./pages/Auth/Login.jsx";
+import Signup from "./pages/Auth/Signup.jsx";
+
+import UserProvider from "./context/UserContext.jsx";
 
 function App() {
-  console.log(window.location.pathname);
-
   return (
     <UserProvider>
       <BrowserRouter>
@@ -23,21 +23,17 @@ function App() {
         </Routes>
       </BrowserRouter>
     </UserProvider>
-    
-  )
+  );
 }
 
-export default App
+export default App;
 
-const Root = ()=>{
-  const isAunthenticated = !!localStorage.getItem("token")
-  
-  return(
-    isAunthenticated ? (
-      <Navigate to = "/dashboard"/>
-    ):(
-      <Navigate to = "/login"/>
-    )
-  )
+const Root = () => {
+  const isAuthenticated = !!localStorage.getItem("token");
 
-}
+  return isAuthenticated ? (
+    <Navigate to="/dashboard" />
+  ) : (
+    <Navigate to="/login" />
+  );
+};

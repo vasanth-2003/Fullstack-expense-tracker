@@ -38,7 +38,7 @@ function Income() {
   return (
     <div className="flex min-h-screen bg-gray-100">
         {/* SIDEBAR */}
-      <SideMenu username="pag" />
+      <SideMenu username="" />
 
       {/* MAIN CONTENT */}
       <div className="flex-1 p-6 sm:p-10">
