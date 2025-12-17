@@ -2,7 +2,7 @@ import React, { useContext, useEffect ,useState} from 'react'
 import SideMenu from './Sidemenu'
 import axiosInstance from '../../utils/axiosInstance'
 import { API_PATHS } from '../../utils/apiPaths'
-import { UserContext } from '../../context/UserContext'
+import { UserContext } from '../../context/Usercontext'
 import InfoCard from '../../components/Cards/InfoCard'
 import { LuTrendingUp, LuWallet, LuPiggyBank } from "react-icons/lu";
 import { addThousandSeperator } from '../../utils/helper'

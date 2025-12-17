@@ -1,6 +1,6 @@
 import { LuLayoutDashboard, LuWallet, LuTrendingUp, LuLogOut } from "react-icons/lu";
 import { Link, useLocation } from "react-router-dom";
-import { UserContext } from "../../context/UserContext";
+import { UserContext } from "../../context/Usercontext";
 import { useContext } from "react";
 
 const SideMenu = ({ username }) => {

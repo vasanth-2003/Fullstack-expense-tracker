@@ -6,8 +6,7 @@ import Expense from "./pages/dashboard/Expense.jsx";
 import Income from "./pages/dashboard/Income.jsx";
 import Login from "./pages/Auth/Login.jsx";
 import Signup from "./pages/Auth/Signup.jsx";
-
-import UserProvider from "./context/UserContext.jsx";
+import UserProvider from "./context/Usercontext.jsx";
 
 function App() {
   return (

@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { Link,useNavigate } from "react-router-dom";
 import axiosInstance from "../../utils/axiosInstance";
 import { API_PATHS } from "../../utils/apiPaths";
-import { UserContext } from "../../context/UserContext";
+import { UserContext } from "../../context/Usercontext";
 
 
 const Signup = () => {
