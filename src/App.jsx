@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
 
-import Home from "./pages/Dashboard/Home.jsx";
-import Expense from "./pages/Dashboard/Expense.jsx";
-import Income from "./pages/Dashboard/Income.jsx";
+import Home from "./pages/dashboard/Home.jsx";
+import Expense from "./pages/dashboard/Expense.jsx";
+import Income from "./pages/dashboard/Income.jsx";
 import Login from "./pages/Auth/Login.jsx";
 import Signup from "./pages/Auth/Signup.jsx";
 
