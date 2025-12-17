@@ -1,5 +1,5 @@
 import React, { useContext, useEffect ,useState} from 'react'
-import SideMenu from './Sidemenu'
+import SideMenu from "./SideMenu"
 import axiosInstance from '../../utils/axiosInstance'
 import { API_PATHS } from '../../utils/apiPaths'
 import { UserContext } from '../../context/Usercontext'

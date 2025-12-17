@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import SideMenu from './Sidemenu'
 import axiosInstance from '../../utils/axiosInstance'
-// import AddIncomeModal from '../../components/incomeForm'
+import SideMenu from './SideMenu'
 import AddExpenseModal from '../../components/expanesForm'
 import { API_PATHS } from '../../utils/apiPaths'
 import ExpenseOverview from './ExpenseOverview'
